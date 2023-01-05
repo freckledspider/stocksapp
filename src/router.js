@@ -4,9 +4,9 @@ import {
     Route,
 } from "react-router-dom";
 import App from './App';
-import Main from './components/main'
-import Stocks from './components/stocks';
-import About from './components/about';
+import Main from './pages/main'
+import Stocks from './pages/stocks';
+import About from './pages/about';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,8 +19,12 @@ const router = createBrowserRouter(
                     element={<Main/>}
                 />
                 <Route 
-                    path=''
+                    path='stocks'
                     element={<Stocks/>}
+                />
+                <Route 
+                    path='about'
+                    element={<About/>}
                 />
         </Route>
     )
