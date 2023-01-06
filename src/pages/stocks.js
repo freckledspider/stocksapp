@@ -8,7 +8,7 @@ const Stocks = (props) => {
             {stocksData.map((stock) => {
                 const { name, symbol } = stock;
                 return (
-                    <Link to={`/price/${symbol}`}>
+                    <Link to={`/stocks/${symbol}`}>
                         <h2>{name}</h2>
                     </Link>
                 );
