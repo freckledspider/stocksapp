@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Nav = props => {
     return (
         <div className='nav'>
-            <Link to='/'>
+            <Link class="istockslink" to='/'>
                 <div>iStocks</div>
             </Link>
             <Link to='/stocks'>

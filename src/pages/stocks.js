@@ -5,10 +5,11 @@ const Stocks = (props) => {
 
     return (
         <div className="stocks">
+            <h1>Most Active Stocks</h1>
             {stocksData.map((stock) => {
                 const { name, symbol } = stock;
                 return (
-                    <Link to={`/stocks/${symbol}`}>
+                    <Link class="activestocks" to={`/stocks/${symbol}`}>
                         <h2>{name}</h2>
                     </Link>
                 );
