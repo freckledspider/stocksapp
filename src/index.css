@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(137, 136, 136);
+  background-color: rgb(209, 209, 209);
 }
 
 code {
@@ -14,9 +14,16 @@ code {
 }
 
 h1 {
-  letter-spacing: -2px;
-  font-size: 3.5em;
+  letter-spacing: -3px;
+  font-size: 4em;
+  color:rgb(255, 255, 255);
 }
+
+.showstock {
+  width: 50%;
+  margin: auto;
+}
+
 
 .istockslink {
   color: white;
@@ -50,18 +57,29 @@ padding: 10px;
 
 .activestocks{
   display: block;
-  background-color: rgb(148, 148, 148);
+  background-color: rgb(185, 185, 185);
   padding: 10px;
   text-decoration: none;
-  margin: 10px;
-  color: white;
+  color: rgb(227, 227, 227);
   width: 30%;
   margin: auto;
   transition: 0.3s;
   letter-spacing: -1px;
+  border-radius: 1em;
+  margin-top: 1em;
+  height: 4.5em;
 }
 
 .activestocks:hover {
-  color: rgb(94, 94, 94);
+  color: rgb(113, 113, 113);
   background-color: rgb(179, 178, 178);
+}
+
+a:link, a:active, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color:rgb(227, 227, 227)
 }
